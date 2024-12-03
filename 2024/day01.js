@@ -6,7 +6,7 @@ function parseColumns(fileName) {
 
   readFileSync(fileName)
     .toString()
-    .split("\n")
+    .split("\r\n")
     .map((v) => v.split(/\s+/))
     .forEach((v) => {
       column1.push(v[0]);
