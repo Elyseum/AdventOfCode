@@ -1,5 +1,4 @@
 import { readFileSync } from "fs";
-import { markAsUntransferable } from "worker_threads";
 
 function readLine(fileName) {
   return readFileSync(fileName).toString();
