@@ -19,7 +19,6 @@ function execMul(mul) {
 function part1(fileName) {
   const line = readLine(fileName);
   return parseMulInstructions(line)
-    .flat()
     .map(execMul)
     .reduce((x, y) => x + y, 0);
 }
